@@ -36,7 +36,6 @@
 .wrapper {
 	/* width: 1170px; */
 	width: 81%;
-	background-color: black;
 	margin: 0 auto;
 }
 
@@ -48,12 +47,10 @@
 
 [class*="col-"] {
 	float: left;
-	padding: 0 10px 20px 10px
 }
 
 [class*="col-"] div {
 	height: 100px;
-	background-color: blue;
 }
 
 [class*="col-"]:last-of-type {

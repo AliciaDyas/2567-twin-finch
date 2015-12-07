@@ -24,7 +24,13 @@
 --------------------------------------5.2 Background Images
 --------------------------------6 Other
 --------------------------------------6.1 Colors
+--------------------------------------6.2 Columns
+--------------------------------------6.3 Media Queries
 
+*/
+
+/*
+--------------------------------1 Body
 */
 
 *, *:after, *:before {
@@ -45,20 +51,181 @@
 	clear: both;
 }
 
+/*
+--------------------------------2 Typography
+*/
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*
+--------------------------------------2.1 Headings
+*/
+
+#hero, header {
+	text-align: center;
+}
+
+/*
+--------------------------------------2.2 Body Copy
+*/
+
+
+
+/*
+--------------------------------------2.3 Buttons
+*/
+
+
+
+/*
+--------------------------------------2.4 Forms
+*/
+
+input, textarea {
+	display: block;
+	width: 32.5rem;
+	height: 3rem;
+}
+
+label {
+	display: none;
+}
+
+/*
+--------------------------------------2.5 Lists
+*/
+
+ul li {
+	display: inline-block;
+}
+
+/*
+--------------------------------------2.6 Tables
+*/
+
+
+
+/*
+--------------------------------3 Navigation Menues
+*/
+
+
+
+/*
+--------------------------------------3.1 Main
+*/
+
+
+
+/*
+--------------------------------------3.2 Sub
+*/
+
+
+
+/*
+--------------------------------------3.3 Footer
+*/
+
+
+
+/*
+--------------------------------4 Structure
+*/
+
+ul, input, textarea {
+	margin: .5rem;
+}
+
+body > section {
+	padding: 5rem 0;
+}
+
+section section {
+	padding: .5rem;
+}
+
+.type {
+	margin: .5rem auto;
+	text-align: center;
+}
+
+#find {
+	padding-left: 4%;
+}
+
+/*
+--------------------------------------4.1 Site Content
+*/
+
+
+
+/*
+--------------------------------------4.2 Site Header
+*/
+
+
+
+/*
+--------------------------------------4.3 Site Footer
+*/
+
+
+
+/*
+--------------------------------5 Media
+*/
+
+figure {
+	width: 2rem;
+	height: 2rem;
+	background-color: #676767;
+}
+
+section section figure {
+	margin: 0 auto;
+}
+
+/*
+--------------------------------------5.1 Sprites
+*/
+
+
+
+/*
+--------------------------------------5.2 Background Images
+*/
+
+
+
+/*
+--------------------------------6 Other
+*/
+
+
+
+/*
+--------------------------------------6.1 Colors
+*/
+
+
+
+/*
+--------------------------------------6.2 Columns
+*/
+
 [class*="col-"] {
+	margin: 0 auto;
+}
+
+.left, .col-1-3 {
 	float: left;
 }
 
-[class*="col-"] div {
-	height: 100px;
-}
-
-[class*="col-"]:last-of-type {
-	padding-right: 0;
-}
-
-[class*="col-"]:first-of-type {
-	padding-left: 0;
+.right, .col-5-12 {
+	float: right;
 }
 
 .col-1 {
@@ -73,7 +240,7 @@
 	width: 33.33%;
 }
 
-.col-2-3 {
+.col-2-3, .type {
 	width: 66.66%;
 }
 
@@ -245,37 +412,196 @@
 	width: 91.66%;
 }
 
+/*
+--------------------------------------6.3 Media Queries
+*/
+
 @media screen and (max-width: 480px) {
-	
-	.col-2-7 {
-		width: 42.85%;
-	}
-	
-	.col-1-8:nth-child(even), .col-1-9:nth-child(even), .col-1-10:nth-child(even), .col-1-11:nth-child(even), .col-1-12:nth-child(even), .col-9-11, .col-8-11 {
-		width: 45%;
-	}
-	
-	.col-1-4, .col-1-5, .col-1-6, .col-1-7  {
-		width: 50%;
-	}
-	
-	.col-1-8, .col-1-9, .col-1-10, .col-1-11, .col-1-12, .col-2-11, .col-3-11 {
-		width: 55% ;
-	}
-	
-	.col-5-7 {
-		width: 57.14%
-	}
-	
-	.col-1-3, .col-2-3, .col-3-4, .col-4-5, .col-5-6, .col-6-7, .col-7-8, .col-8-9, .col-9-10, .col-10-11, .col-11-12, .wrapper, .special-100 {
-		width: 100%;
-	}
-	
-	[class*="col-"]:last-of-type {
-	padding-right: 10px;
-	}
-	
-	[class*="col-"]:first-of-type {
-		padding-left: 10px;
-	}
+/*
+--------------------------------1 Body
+*/
+
+.wrapper {
+	/* width: 1170px; */
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*
+--------------------------------2 Typography
+*/
+
+
+/*
+--------------------------------------2.1 Headings
+*/
+
+
+
+/*
+--------------------------------------2.2 Body Copy
+*/
+
+p {
+	font-size: 14px;
+}
+
+/*
+--------------------------------------2.3 Buttons
+*/
+
+
+
+/*
+--------------------------------------2.4 Forms
+*/
+
+input, textarea {
+	width: 22rem;
+	height: 3rem;
+}
+
+/*
+--------------------------------------2.5 Lists
+*/
+
+
+
+/*
+--------------------------------------2.6 Tables
+*/
+
+
+
+/*
+--------------------------------3 Navigation Menues
+*/
+
+.sml-dspy-no {
+	display: none;
+}
+
+/*
+--------------------------------------3.1 Main
+*/
+
+
+
+/*
+--------------------------------------3.2 Sub
+*/
+
+
+
+/*
+--------------------------------------3.3 Footer
+*/
+
+
+
+/*
+--------------------------------4 Structure
+*/
+
+ul, input, textarea {
+	margin: .5rem 0;
+}
+
+body > section {
+	padding: 0;
+}
+
+section section {
+	padding: 0;
+}
+
+.type {
+	margin: 0;
+}
+
+/*
+--------------------------------------4.1 Site Content
+*/
+
+
+
+/*
+--------------------------------------4.2 Site Header
+*/
+
+
+
+/*
+--------------------------------------4.3 Site Footer
+*/
+
+
+
+/*
+--------------------------------5 Media
+*/
+
+figure {
+	width: 2rem;
+	height: 2rem;
+}
+
+section section figure {
+	margin: 0 auto;
+}
+
+/*
+--------------------------------------5.1 Sprites
+*/
+
+
+
+/*
+--------------------------------------5.2 Background Images
+*/
+
+
+
+/*
+--------------------------------6 Other
+*/
+
+
+
+/*
+--------------------------------------6.1 Colors
+*/
+
+
+
+/*
+--------------------------------------6.2 Columns
+*/
+
+[class*="col-"] {
+	margin: 0 auto;
+}
+
+.left, .col-1-3 {
+	float: left;
+}
+
+.right, .col-5-12 {
+	float: right;
+}
+
+.col-2-3 {
+	width: 66.62%;
+	float: right;
+}
+
+.col-1-3 {
+	width: 33.32%;
+	float: left;
+}
+
+.col-1, .col-1-2, .col-1-4, .col-3-4, .col-4-5, .col-1-5, .col-5-6, .col-5-7, .col-6-7, .col-1-8, .col-3-8, .col-3-10, .col-7-10, .col-9-10, .col-1-11, .col-2-11, .col-3-11, .col-4-11, .col-5-11, .col-6-11, .col-7-11, .col-8-11, .col-9-11, .col-10-11, .col-1-12, .col-5-12, .col-7-12, .col-11-12, .type {
+	width: 100%;
+}
+
 }

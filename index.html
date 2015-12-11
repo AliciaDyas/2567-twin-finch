@@ -12,55 +12,62 @@
 <body>
 
 <header>
-	<div class="wrapper">
-    	<div class="row">
-        	<div class="col-1-12 left">
-            	<a href="#">
-                	<figure>
-                    	<img src="" alt="">
-                    </figure>
-                </a>
+	<div class="bg-drk-red">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-1-4 left">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Twin Finch" width="100">
+                    </a>
+                </div>
+                <nav class="col-1-2 right">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <div id="product-sml">
+                            <li>
+                                <a href="#prodcuts">Products</a>
+                            </li>
+                        </div>
+                        <div id="nav-sml">
+                            <li>
+                                <a href="#about">About Our Coffee</a>
+                            </li>
+                            <li>
+                                <a href="#find">Find Us</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Connect With Us</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
             </div>
-        	<nav class="col-5-12">
-            	<ul>
-            		<li class="sml-dspy-no">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#prodcuts">Products</a>
-                    </li>
-                    <li>
-                        <a href="#about">About Our Coffee</a>
-                    </li>
-                    <li>
-                        <a href="#find">Find Us</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Connect With Us</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+    </div>
         <!--Hero-->
+    <div class="wrapper">
         <div class="row" id="hero">
         	<div class="col-4-5">
-            	<h1>Twin Finch Roastery</h1>
-                <p>An authentic microroastery; small, dedicated, and highly focused on quality. We have a constantly evolving, hand picked selection of  ne co ee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
-                <a href="#contact">Purchase your perfact bean</a>
+            	<h1>Twin Finch</h1>
+                <div class="line"></div>
+                <p>An authentic microroastery; small, dedicated, and highly focused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+                <a href="#contact">Purchase your perfect bean</a>
             </div>
-            <div class="col-1-12 right">
+            <div id="fix-media-nav">
             	<ul>
                 	<li>
-            			<a href="https://www.facebook.com/"></a>
+            			<a href="https://www.facebook.com/" target="_blank" class="fb-sprite"></a>
                     </li>
                     <li>
-                		<a href="https://plus.google.com/"></a>
+                		<a href="https://plus.google.com/" target="_blank" class="google-sprite"></a>
                 	</li>
                     <li>
-                		<a href="https://twitter.com/"></a>
+                		<a href="https://twitter.com/" target="_blank" class="twttr-sprite"></a>
                 	</li>
                     <li>
-                    	<a href="#contact"></a>
+                    	<a href="#contact" id="mail-sprite"></a>
                     </li>
                 </ul>
             </div>
@@ -73,32 +80,35 @@
 	<div class="wrapper" id="products">
         	<header>
             	<h2>Products</h2>
+                <div class="line"></div>
             </header>
             <section class="row">
                 <div class="col-5-6">
                     <div class="row">
-                        <div class="col-1-3 left">
-                            <figure>
-                                <img src="" alt="">
-                            </figure>
-                            <header>
+                    	<div class="col-2-3 left" id="house-blend">
+                        	<header>
                                 <h3>Finch House Blend</h3>
-                                <a href="#contact">Purchase Now</a>
                             </header>
-                        </div>
-                        <div class="col-2-3 right">
                             <p>Hint of citrus, complemented by flavors of dark chocolate, peanut, and light pepper notes.</p>
                             <p>Medium</p>
-                            <p>Cajamarca & Moyobamba Regions, Peru</p>
+                            <p>Cajamarca &amp; Moyobamba Regions, Peru</p>
                             <p>1lb $17.95</p>
-                       </div>
+                        </div>
+                        <div class="col-1-3 left">
+                            <figure>
+                                <img src="img/house-blend.jpg" alt="House Blend Packaging" width="200">
+                            </figure>
+                            <a href="#contact">Purchase</a>
+                        </div>
                    </div>
                 </div>
             </section>
             <div class="row">
                 <div class="type">
+                	<div class="line"></div>
                     <p>Our house blend was rated a 98 by coffeereview.com!</p>
-                    <p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” Coffee Review</p>
+                    <blockquote>&ldquo;This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.&rdquo; Coffee Review</blockquote>
+                    <div class="line"></div>
                 </div>
             </div>
             <div class="row"> 
@@ -106,28 +116,28 @@
                     <section class="row">
                         <div class="col-1-3">
                         	<figure>
-                    			<img src="" alt="">
+                    			<img src="img/evening-oak.jpg" alt="Evening Oak Packaging" width="125">
                 			</figure>
                             <header>
                                 <h3>Evening Oak</h3>
-                                <a href="#contact">Purchase Now</a>
+                                <a href="#contact">Purchase</a>
                             </header>
                         </div>
                         <div class="col-2-3 right">
                             <p>Our featured roast of the season. Pungently rich and complex with hints of night-bloominb flowers and coriander in aroma and cup.</p>
                             <p>Medium-Dark</p>
                             <p>Eastern Java, Indonesia</p>
-                            <p>1lb $ 19.95</p>
+                            <p>1lb $19.95</p>
                         </div>
                     </section>
                     <section class="row">
                         <div class="col-1-3 left">
                         	<figure>
-                    			<img src="" alt="">
+                    			<img src="img/midnight.jpg" alt="Midnight Roast Packaging" width="125">
                 			</figure>
                             <header>
                                 <h3>Midnight</h3>
-                                <a href="#contact">Purchase Now</a>
+                                <a href="#contact">Purchase</a>
                             </header>
                         </div>
                         <div class="col-2-3 right">
@@ -142,11 +152,11 @@
                     <section class="row">
                         <div class="col-1-3 left">
                         	<figure>
-                    			<img src="" alt="">
+                    			<img src="img/sunrise.jpg" alt="Sunrise Blend Packaging" width="125">
                 			</figure>
                             <header>
                                 <h3>Sunrise</h3>
-                                <a href="#contact">Purchase Now</a>
+                                <a href="#contact">Purchase</a>
                             </header>
                         </div>
                         <div class="col-2-3 right">
@@ -159,11 +169,11 @@
                     <section class="row">
                         <div class="col-1-3 left">
                         	<figure>
-                    			<img src="" alt="">
+                    			<img src="img/expresso.jpg" alt="Expresso Packaging" width="125">
                 			</figure>
                             <header>
                                 <h3>Expresso</h3>
-                                <a href="#contact">Purchase Now</a>
+                                <a href="#contact">Purchase</a>
                             </header>
                         </div>
                         <div class="col-2-3 right">
@@ -176,6 +186,7 @@
             </div>
             <div class="row">
                 <div class="type">
+                    <div class="line"></div>
                     <p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
                     <a href="">How to brew your best cup of coffee.</a>
                 </div>
@@ -190,6 +201,7 @@
         	<div class="col-5-12">
                 <header>
                     <h2>About Our Coffee</h2>
+                    <div class="line"></div>
                 </header>
                 <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
                 <a href="#contact">Brew with the best beans</a>
@@ -205,6 +217,7 @@
         	<div class="col-1-3">
                 <header>
                     <h2>Find Us</h2>
+                    <div class="line"></div>
                 </header>
                 <p>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</p>
             </div>
@@ -218,18 +231,19 @@
     	<div class="row">
         	<header>
             	<h2>Connect with us</h2>
+                <div class="line"></div>
             </header>
             <div class="1-2 left">
             	<div class="row">
                     <div class="col-5-6">
                         <form>
                         	<label for="name"></label>
-                            <input type="text" id="name">
+                            <input type="text" id="name" placeholder="Full Name">
                             <label for="mail"></label>
-                            <input type="email" id="mail">
-                            <textarea></textarea>
+                            <input type="email" id="mail" placeholder="Email Address">
+                            <textarea placeholder="Additional Information..."></textarea>
                             <label for="sub"></label>
-                            <input type="submit" id="sub">
+                            <input type="submit" id="sub" >
                         </form>
                     </div>
                 </div>
@@ -250,16 +264,19 @@
     </div>
 </section>
 
-<footer>
+<footer class="bg-drk-red">
 	<div class="wrapper">
     	<div class="row">
-        	<div>
+        	<div div class="col-1-3 left">
+            	<a href="#">
+                    <img src="img/logo.png" alt="Twin Finch" width="100">
+                </a>
             </div>
-            <div>
-            	<h4></h4>
+            <div class="col-1-3 left">
+            	<h4>Site Map</h4>
                 <nav>
                 	<ul>
-                        <li class="sml-dspy-no">
+                        <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
@@ -277,16 +294,16 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="col-1-3 left">
             	<ul>
                 	<li>
-            			<a href="https://www.facebook.com/"></a>
+            			<a href="https://www.facebook.com/" target="_blank" class="fb-sprite"></a>
                     </li>
                     <li>
-                		<a href="https://plus.google.com/"></a>
+                		<a href="https://plus.google.com/" target="_blank" class="google-sprite"></a>
                 	</li>
                     <li>
-                		<a href="https://twitter.com/"></a>
+                		<a href="https://twitter.com/" target="_blank" class="twttr-sprite"></a>
                 	</li>
                 </ul>
             </div>

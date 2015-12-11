@@ -59,6 +59,10 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+p, section a, #hero a, [type="submit"] {
+	font-size: 1.2rem;
+}
+
 /*
 --------------------------------------2.1 Headings
 */
@@ -67,26 +71,102 @@
 	text-align: center;
 }
 
+h1, h2 {
+	color: #821207;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+#about h2 {
+	text-align: left;
+}
+
+h2 {
+	font-size: 3.9rem;
+	margin-bottom: .2rem;
+}
+
+h1 {
+	font-size: 5.5rem;
+	margin-bottom: .2rem;
+}
+
+h3 {
+	color: #280505;
+}
+
+#house-blend h3 {
+	font-size: 3.4rem;
+	font-weight: 900;
+}
+
+#find h2 {
+	text-align: left;
+}
+#find div[class="line"] {
+	margin: auto 1.7rem;
+}
+
 /*
 --------------------------------------2.2 Body Copy
 */
 
-
+#hero p {
+	font-size: 2.2rem;
+	font-weight: 200;
+	margin-top: .6rem;
+}
 
 /*
 --------------------------------------2.3 Buttons
 */
 
+section a, #hero>div>a, [type="submit"] {
+	border: 2px solid #821207;
+	padding: 1rem 1.2rem;
+	margin: .4rem;
+	border-radius: .6rem;
+	text-decoration: none;
+	color: #fcefe3;
+	background-color: #821207;
+	display: inline-block;
+	text-transform: uppercase;
+}
 
+#about a:hover {
+	background-color: transparent;
+}
+
+section a:hover, #hero>div>a:hover, [type="submit"]:hover {
+	background-color: #fcefe3;
+	color: #821207;
+}
+
+#about a, #about h2, #about p {
+	color: #fcefe3;
+}
 
 /*
 --------------------------------------2.4 Forms
 */
 
+[type="submit"] {
+	padding: inherit;
+	width: 30%;
+}
+
 input, textarea {
 	display: block;
 	width: 32.5rem;
 	height: 3rem;
+	border: 2px solid #821207;
+	background-color: transparent;
+	color: #821207;
+	border-radius: .6rem;
+}
+
+textarea {
+	height: 20rem;
 }
 
 label {
@@ -96,6 +176,8 @@ label {
 /*
 --------------------------------------2.5 Lists
 */
+
+
 
 ul li {
 	display: inline-block;
@@ -111,25 +193,68 @@ ul li {
 --------------------------------3 Navigation Menues
 */
 
-
+#product-sml, #nav-sml {
+	display: inline-block;
+}
 
 /*
 --------------------------------------3.1 Main
 */
 
+nav a {
+	color: #fcefe3;
+	font-size: .8rem;
+	padding: .1rem 0;
+	margin-left: 2rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border-bottom: 1px solid #fcefe3;
+}
+
+header nav {
+	padding: 2.2rem 0;
+}
+
+header img {
+	margin: 1.2rem;
+}
 
 
 /*
 --------------------------------------3.2 Sub
 */
 
+#fix-media-nav {
+	float: right;
+	position: fixed;
+	right: 4rem;
+	top: 8rem;
+}
 
+#fix-media-nav li {
+	display: block;
+	padding: 1.5rem 0;
+}
 
 /*
 --------------------------------------3.3 Footer
 */
 
+footer {
+	color: #fcefe3;
+}
 
+
+footer ul:last-of-type {
+	padding: 1rem 0;
+	text-align: right;
+}
+
+footer img {
+	padding: 2rem 0;
+}
 
 /*
 --------------------------------4 Structure
@@ -178,13 +303,8 @@ section section {
 --------------------------------5 Media
 */
 
-figure {
-	width: 2rem;
-	height: 2rem;
-	background-color: #676767;
-}
 
-section section figure {
+section section > div[class="col-1-3"] {
 	margin: 0 auto;
 }
 
@@ -192,7 +312,50 @@ section section figure {
 --------------------------------------5.1 Sprites
 */
 
+[id*="sprite"], [class*="sprite"] {
+  	display: block;
+  	background-position: 0 0;
+}
 
+.fb-sprite {  
+  	width: 24px;
+  	height: 45px;
+  	background: url(../img/facebook.png) ;
+}
+
+.fb-sprite:hover {
+	background-position: 21px 0;
+}
+
+#mail-sprite {
+	width: 58px;
+	height: 44px;
+  	background: url(../img/mail.png);
+}
+
+#mail-sprite:hover {
+	background-position: 57px 0;
+}
+
+.twttr-sprite  {
+	width: 25px;
+	height: 48px;
+  	background: url(../img/twitter.png);
+}
+
+.twttr-sprite:hover {
+	background-position: 24px 0;
+}
+
+.google-sprite {
+	width: 59px;
+	height: 58px;
+  	background: url(../img/google+.png);
+}
+
+.google-sprite:hover {
+	background-position: 59px 0;
+}
 
 /*
 --------------------------------------5.2 Background Images
@@ -204,13 +367,24 @@ section section figure {
 --------------------------------6 Other
 */
 
-
+.line {
+	border-top: 1px solid #280505;
+	width: 12rem;
+	float: none;
+	margin: auto;
+}
 
 /*
 --------------------------------------6.1 Colors
 */
 
+body {
+	background-color: #fcefe3;
+}
 
+.bg-drk-red, #about {
+	background-color: #280505;
+}
 
 /*
 --------------------------------------6.2 Columns
@@ -477,8 +651,23 @@ input, textarea {
 --------------------------------3 Navigation Menues
 */
 
-.sml-dspy-no {
+nav>ul>li:first-of-type {
 	display: none;
+}
+
+#product-sml {
+	font-size: 1.6rem;
+	text-align: right;
+	display: block;
+	margin: 1.2rem auto;
+}
+
+#nav-sml {
+	font-size: .7rem;
+}
+
+#nav-sml a {
+	margin:.2rem;
 }
 
 /*
@@ -586,7 +775,7 @@ section section figure {
 	float: left;
 }
 
-.right, .col-5-12 {
+.right {
 	float: right;
 }
 
@@ -598,6 +787,10 @@ section section figure {
 .col-1-3 {
 	width: 33.32%;
 	float: left;
+}
+
+.col-5-12 {
+	float: none;
 }
 
 .col-1, .col-1-2, .col-1-4, .col-3-4, .col-4-5, .col-1-5, .col-5-6, .col-5-7, .col-6-7, .col-1-8, .col-3-8, .col-3-10, .col-7-10, .col-9-10, .col-1-11, .col-2-11, .col-3-11, .col-4-11, .col-5-11, .col-6-11, .col-7-11, .col-8-11, .col-9-11, .col-10-11, .col-1-12, .col-5-12, .col-7-12, .col-11-12, .type {

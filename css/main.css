@@ -83,12 +83,12 @@ h1, h2 {
 
 h2 {
 	font-size: 3.9rem;
-	margin-bottom: .2rem;
+	margin-bottom: 3px;
 }
 
 h1 {
 	font-size: 5.5rem;
-	margin-bottom: .2rem;
+	margin-bottom: 3px;
 }
 
 h3 {
@@ -114,7 +114,7 @@ h3 {
 #hero p {
 	font-size: 2.2rem;
 	font-weight: 200;
-	margin-top: .6rem;
+	margin-top: 10px;
 }
 
 /*
@@ -123,23 +123,23 @@ h3 {
 
 section a, #hero>div>a, [type="submit"] {
 	border: 2px solid #821207;
-	padding: 1rem 1.2rem;
-	margin: .4rem;
-	border-radius: .6rem;
+	padding: 16px 20px;
+	margin: 7px;
+	border-radius: 10px;
 	text-decoration: none;
-	color: #fcefe3;
-	background-color: #821207;
+	color: #821207;
+	background-color: transparent;
 	display: inline-block;
 	text-transform: uppercase;
 }
 
 #about a:hover {
-	background-color: transparent;
+	background-color: #821207;
 }
 
 section a:hover, #hero>div>a:hover, [type="submit"]:hover {
-	background-color: #fcefe3;
-	color: #821207;
+	background-color: #821207;
+	color: #fcefe3;
 }
 
 #about a, #about h2, #about p {
@@ -157,16 +157,16 @@ section a:hover, #hero>div>a:hover, [type="submit"]:hover {
 
 input, textarea {
 	display: block;
-	width: 32.5rem;
-	height: 3rem;
+	width: 520px;
+	height: 48px;
 	border: 2px solid #821207;
 	background-color: transparent;
 	color: #821207;
-	border-radius: .6rem;
+	border-radius: 10px;
 }
 
 textarea {
-	height: 20rem;
+	height: 320px;
 }
 
 label {
@@ -204,8 +204,8 @@ ul li {
 nav a {
 	color: #fcefe3;
 	font-size: .8rem;
-	padding: .1rem 0;
-	margin-left: 2rem;
+	padding: 2px 0;
+	margin-left: 32px;
 	text-decoration: none;
 }
 
@@ -214,11 +214,11 @@ nav a:hover {
 }
 
 header nav {
-	padding: 2.2rem 0;
+	padding: 36px 0;
 }
 
 header img {
-	margin: 1.2rem;
+	margin: 20px;
 }
 
 
@@ -229,13 +229,13 @@ header img {
 #fix-media-nav {
 	float: right;
 	position: fixed;
-	right: 4rem;
-	top: 8rem;
+	right: 64px;
+	top: 128px;
 }
 
 #fix-media-nav li {
 	display: block;
-	padding: 1.5rem 0;
+	padding: 24px 0;
 }
 
 /*
@@ -248,12 +248,12 @@ footer {
 
 
 footer ul:last-of-type {
-	padding: 1rem 0;
+	padding: 16px 0;
 	text-align: right;
 }
 
 footer img {
-	padding: 2rem 0;
+	padding: 24px 0;
 }
 
 /*
@@ -261,19 +261,19 @@ footer img {
 */
 
 ul, input, textarea {
-	margin: .5rem;
+	margin: 9px;
 }
 
 body > section {
-	padding: 5rem 0;
+	padding: 80px 0;
 }
 
 section section {
-	padding: .5rem;
+	padding: 8px;
 }
 
 .type {
-	margin: .5rem auto;
+	margin: 8px auto;
 	text-align: center;
 }
 
@@ -369,7 +369,7 @@ section section > div[class="col-1-3"] {
 
 .line {
 	border-top: 1px solid #280505;
-	width: 12rem;
+	width: 192px;
 	float: none;
 	margin: auto;
 }
@@ -406,7 +406,7 @@ body {
 	width: 100%
 }
 
-.col-1-2 {
+.col-1-2, #nav {
 	width: 50%;
 }
 
@@ -507,7 +507,7 @@ body {
 }
 
 .col-7-9 {
-	widht: 77.77%;
+	width: 77.77%;
 }
 
 .col-8-9 {
@@ -590,56 +590,71 @@ body {
 --------------------------------------6.3 Media Queries
 */
 
-@media screen and (max-width: 480px) {
-/*
---------------------------------1 Body
-*/
-
-.wrapper {
-	/* width: 1170px; */
-	width: 90%;
-	margin: 0 auto;
-}
+@media screen and (max-width: 768px) {
 
 /*
 --------------------------------2 Typography
 */
 
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+p, section a, #hero a, [type="submit"] {
+	font-size: .8rem;
+}
 
 /*
 --------------------------------------2.1 Headings
 */
 
+h2 {
+	font-size: 2rem;
+}
 
+h1 {
+	font-size: 3rem;
+}
+
+#house-blend h3 {
+	font-size: 1.8rem;
+}
+
+#find div[class="line"] {
+	margin: auto;
+}
 
 /*
 --------------------------------------2.2 Body Copy
 */
 
-p {
-	font-size: 14px;
+#hero p {
+	font-size: 1.5rem;
+}
+
+#products p {
+	font-size: 1.2rem;
 }
 
 /*
 --------------------------------------2.3 Buttons
 */
 
-
+#products a {
+	font-size: .6rem;
+}
 
 /*
 --------------------------------------2.4 Forms
 */
 
-input, textarea {
-	width: 22rem;
-	height: 3rem;
-}
-
 /*
 --------------------------------------2.5 Lists
 */
 
-
+ul li {
+	display: inline-block;
+}
 
 /*
 --------------------------------------2.6 Tables
@@ -651,61 +666,86 @@ input, textarea {
 --------------------------------3 Navigation Menues
 */
 
-nav>ul>li:first-of-type {
-	display: none;
+#product-sml, #nav-sml {
+	display: inline-block;
+	float: right;
 }
 
-#product-sml {
-	font-size: 1.6rem;
-	text-align: right;
-	display: block;
-	margin: 1.2rem auto;
+#home-sml {
+	display: none; 
 }
 
-#nav-sml {
-	font-size: .7rem;
-}
-
-#nav-sml a {
-	margin:.2rem;
+#product-sml a {
+	font-size: 2rem;
 }
 
 /*
 --------------------------------------3.1 Main
 */
 
+nav a {
+	font-size: .8rem;
+	padding: 2px 0;
+	margin-left: 32px;
+}
+
+header img {
+	margin: 36px auto;
+}
+
+nav a:hover {
+	border-bottom: 1px solid #fcefe3;
+}
+
+header nav {
+	padding: 36px 0;
+}
 
 
 /*
 --------------------------------------3.2 Sub
 */
 
-
+#fix-media-nav {
+	display: none;
+}
 
 /*
 --------------------------------------3.3 Footer
 */
 
 
+footer ul:last-of-type {
+	padding: 16px 0;
+}
+
+footer img {
+	padding: 24px 0;
+}
 
 /*
 --------------------------------4 Structure
 */
 
 ul, input, textarea {
-	margin: .5rem 0;
+	margin: 9px;
 }
 
 body > section {
-	padding: 0;
+	padding: 80px 0;
 }
 
 section section {
-	padding: 0;
+	padding: 8px;
 }
 
 .type {
-	margin: 0;
+	margin: 8px auto;
+	text-align: center;
+}
+
+#find {
+	padding-left: 4%;
 }
 
 /*
@@ -730,38 +770,24 @@ section section {
 --------------------------------5 Media
 */
 
-figure {
-	width: 2rem;
-	height: 2rem;
+#products img {
+	width: 100%;
 }
 
-section section figure {
-	margin: 0 auto;
-}
+
 
 /*
 --------------------------------------5.1 Sprites
 */
-
-
 
 /*
 --------------------------------------5.2 Background Images
 */
 
 
-
 /*
 --------------------------------6 Other
 */
-
-
-
-/*
---------------------------------------6.1 Colors
-*/
-
-
 
 /*
 --------------------------------------6.2 Columns
@@ -771,8 +797,16 @@ section section figure {
 	margin: 0 auto;
 }
 
-.left, .col-1-3 {
+.left, .col-1-3, .col-1-4 {
 	float: left;
+}
+
+#nav {
+	width: 85%;
+}
+
+.col-1-4 {
+	width: 12%;
 }
 
 .right {
@@ -793,7 +827,7 @@ section section figure {
 	float: none;
 }
 
-.col-1, .col-1-2, .col-1-4, .col-3-4, .col-4-5, .col-1-5, .col-5-6, .col-5-7, .col-6-7, .col-1-8, .col-3-8, .col-3-10, .col-7-10, .col-9-10, .col-1-11, .col-2-11, .col-3-11, .col-4-11, .col-5-11, .col-6-11, .col-7-11, .col-8-11, .col-9-11, .col-10-11, .col-1-12, .col-5-12, .col-7-12, .col-11-12, .type {
+.col-1, .col-1-2, .col-3-4, .col-4-5, .col-1-5, .col-5-6, .col-5-7, .col-6-7, .col-1-8, .col-3-8, .col-3-10, .col-7-10, .col-9-10, .col-1-11, .col-2-11, .col-3-11, .col-4-11, .col-5-11, .col-6-11, .col-7-11, .col-8-11, .col-9-11, .col-10-11, .col-1-12, .col-5-12, .col-7-12, .col-11-12, .type {
 	width: 100%;
 }
 
